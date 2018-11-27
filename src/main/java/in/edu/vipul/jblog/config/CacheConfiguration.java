@@ -38,6 +38,7 @@ public class CacheConfiguration {
             cm.createCache(in.edu.vipul.jblog.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(in.edu.vipul.jblog.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(in.edu.vipul.jblog.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(in.edu.vipul.jblog.domain.Post.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
